@@ -1,0 +1,55 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-pickUp {
+  margin-bottom: 100px;
+
+  @include g.mq('md') {
+    margin-bottom: 70px;
+  }
+
+  &__items {
+
+    @include g.mq('md') {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2%;
+    }
+  }
+
+  &__item {
+
+    & + & {
+      @include g.mq('sm') {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__imageWrap {
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    margin-top: 10px;
+  }
+
+  &__title {
+    font-size: 1rem;
+  }
+
+  &__linkWrap {
+    margin-top: 15px;
+    text-align: center;
+  }
+}

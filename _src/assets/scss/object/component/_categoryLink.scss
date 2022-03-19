@@ -1,0 +1,14 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.c-categoryLink {
+  
+  @include g.mq('md') {
+    transition: opacity 0.4s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}

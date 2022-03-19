@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "../global/" as g;
+
+.l-globalNav {
+  margin-bottom: 34px;
+  background-color: g.$color-bg-globalNav;
+
+  @include g.mq('md') {
+    margin-bottom: 44px;
+  }
+}

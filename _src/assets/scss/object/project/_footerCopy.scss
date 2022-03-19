@@ -1,0 +1,16 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-footerCopy {
+  margin-top: 90px;
+  line-height: 1;
+  text-align: center;
+
+  @include g.mq('md') {
+    margin-top: 60px;
+  }
+
+  &__text {
+    font-size: 0.75rem;
+  }
+}

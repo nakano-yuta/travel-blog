@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.c-widgetTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+
+  &--left {
+    text-align: left;
+  }
+}

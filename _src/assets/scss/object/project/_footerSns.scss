@@ -1,0 +1,9 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-footerSns {
+
+  &__wrapper {
+    margin-top: 30px;
+  }
+}

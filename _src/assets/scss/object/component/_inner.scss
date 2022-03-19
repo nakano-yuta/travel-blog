@@ -1,0 +1,11 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.c-inner {
+  padding: 0 16px;
+
+  @include g.mq('md') {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

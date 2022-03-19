@@ -1,0 +1,33 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-globalNav {
+  color: #fff;
+  overflow-x: scroll;
+
+  &__lists {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+
+    & + & {
+      margin-left: 60px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.6em 0;
+
+    @include g.mq('md') {
+      transition: opacity 0.4s;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}

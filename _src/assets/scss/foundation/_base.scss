@@ -1,0 +1,29 @@
+@use "sass:math";
+@use "../global" as g;
+
+/* base style ---------------------- */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "noto sans", "noto sans jp", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: g.$color-text;
+  background-color: g.$color-bg;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

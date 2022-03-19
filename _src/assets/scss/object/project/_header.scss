@@ -1,0 +1,35 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.p-logo {
+  padding-left: 4px;
+  font-size: 1rem;
+  line-height: 1;
+
+  @include g.mq("md") {
+    padding-left: 0;
+  }
+
+  &__link {
+    display: block;
+
+    @include g.mq('md') {
+      transition: opacity 0.4s;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__image {
+    width: 145px;
+  }
+}

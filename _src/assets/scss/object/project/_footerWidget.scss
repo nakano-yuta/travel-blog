@@ -1,0 +1,20 @@
+@use "sass:math";
+@use "../../global/" as g;
+
+.p-footerWidget {
+
+  @include g.mq('md') {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+  }
+
+  &__block {
+
+    & + & {
+      @include g.mq('sm') {
+        margin-top: 50px;
+      }
+    }
+  }
+}
