@@ -17,3 +17,9 @@ gulp, Sass(Scss)
 https://hiki-coder.com/portfolio/travel-blog/<br>
 ユーザー名：demo<br>
 パスワード：demo
+
+# 難しかったところ
+初めてCSS設計にFLOCSSを採用したので、class名の付け方が難しく感じた。<br>
+特にprojectかcomponentのどちらにするべきかを悩んだ。<br>
+解決策として、ひとまずprojectとして考えて頻出するようならcomponentにする、と考えるとスムーズに作業することができたと思う。<br>
+ただ、一つの要素に同一レイヤーのクラスを付与している箇所が見当たるなど、FLOCSSのルールをしっかり理解できていない部分もあるようなので公式ドキュメントを再確認したい。
